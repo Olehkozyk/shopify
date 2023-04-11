@@ -1,0 +1,39 @@
+{
+  "name": "my-shopify-theme",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "laravel-mix": "^6.0.31",
+    "postcss": "^8.3.9",
+    "sass": "^1.42.1",
+    "tailwindcss": "^2.2.15",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-router": "^5.0.8",
+    "@vue/cli-plugin-vuex": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
+    "@vueform/multiselect": "^2.5.6",
+    "vue": "^3.2.47",
+    "vue-template-compiler": "^2.7.14",
+    "vue-full-loading": "^1.2.1",
+    "vue-multiselect": "^2.1.6",
+    "vue-router": "^4.1.3",
+    "vue-select": "^3.20.0",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.2.47",
+    "browser-sync": "^2.29.1",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "cross-env": "^7.0.3",
+    "glob": "^9.3.4",
+    "sass-loader": "^12.1.0",
+    "vue-loader": "^17.0.1"
+  },
+  "scripts": {
+    "start": "concurrently \"shopify theme dev\" \"npm run watch\"",
+    "watch": "mix watch",
+    "dev": "mix",
+    "push": "shopify theme push"
+  }
+}
