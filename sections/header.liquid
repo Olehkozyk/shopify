@@ -1,0 +1,30 @@
+<div>
+  <div class="logo">
+    {{ shop.name }}
+  </div>
+  <div class="nav">
+    {% for item in section.settings.menu.links %}
+      {% if item.links != blank %}
+        <div class="link">
+          <button>
+            {{ item.title }}
+          </button>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Header",
+    "settings": [
+      {
+        "type": "link_list",
+        "id": "menu",
+        "default": "main-menu",
+        "label": "Heading Navigation Menu"
+      }
+    ]
+  }
+{% endschema %}
